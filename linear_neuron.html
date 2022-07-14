@@ -495,7 +495,7 @@ y3 = w5w1*x1 + w5w2*x2 + w5b1 + w6w3*x1 + w6w4*x2 + w6b2 + b3
 </p>
 
 <pre class='language-none'>
-y3 = w5w1w6w3*x1 + w5w2w6w4*x2 + w5b1 + w6b2 + b3
+y3 = (w5w1+w6w3)*x1 + (w5w2+w6w4)*x2 + w5b1 + w6b2 + b3
 </pre>
 
 <p>
@@ -503,8 +503,8 @@ y3 = w5w1w6w3*x1 + w5w2w6w4*x2 + w5b1 + w6b2 + b3
 </p>
 
 <pre class='language-none'>
-m1 = w5w1w6w3
-m2 = w5w2w6w4
+m1 = w5w1+w6w3
+m2 = w5w2+w6w4
 c  = w5b1 + w6b2 + b3
 </pre>
 
